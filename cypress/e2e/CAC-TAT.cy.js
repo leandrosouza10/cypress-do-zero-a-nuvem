@@ -176,6 +176,13 @@ describe('Central de Atendimento ao Cliente TAT', () => {
      cy.contains('h1', 'CAC TAT - Política de Privacidade').should('be.visible')
   })
 
+  it('encontrar o gatinho escondido na aplicação', () => {
+    cy.get('#cat')
+    .invoke('show')
+    .should('be.visible')
+    
+  })
+
   
 
 
