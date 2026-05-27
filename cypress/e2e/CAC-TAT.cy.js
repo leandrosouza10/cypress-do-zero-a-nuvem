@@ -178,9 +178,13 @@ describe('Central de Atendimento ao Cliente TAT', () => {
 
   it('encontrar o gatinho escondido na aplicação', () => {
     cy.get('#cat')
-    .invoke('show')
-    .should('be.visible')
-    
+     .invoke('show')
+     .should('be.visible')
+    cy.get('#title')
+     .invoke('text', 'CAT TAT')
+    cy.get('#subtitle')
+     .invoke('text', 'Testando o invoke')
+
   })
 
   
